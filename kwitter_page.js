@@ -40,7 +40,6 @@ function getData() {
         name=message_data['name'];
         like=message_data['like'];
         message=message_data['message'];
-        
         name_with_tag = "<h4> " + name + "<img class='user_tick' src='tick.png'></h4>";
         message_with_tag = "<h4 class='message_h4'>" + message + "</h4>";
         like_button = "<button class='btn btn-warning' id=" + firebase_message_id + " value=" + like + " onclick='updateLike(this.id)'>";
